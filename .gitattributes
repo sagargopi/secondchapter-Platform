@@ -1,0 +1,12 @@
+# Handle line endings automatically for files unless overridden per path
+* text=auto eol=lf
+
+# Force these files to be CRLF (Windows) on checkout
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+
+# Force these files to be LF (Unix) on checkout
+*.sh text eol=lf
+
+# Binary files should not be modified
+*.{png,jpg,jpeg,gif,ico,svg,woff,woff2,ttf,eot} binary
